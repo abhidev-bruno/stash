@@ -1,5 +1,5 @@
 info:
-  name: Add a new pet to the store
+  name: Add a new pet to the store (1)
   type: http
   seq: 2
   tags:
@@ -8,7 +8,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/pet{{process.env.ssAXsSCC}}"
+  url: "{{baseUrl}}/pet"
   headers:
     - name: accept
       value: application/json
@@ -39,8 +39,6 @@ http:
 
 runtime:
   scripts:
-    - type: after-response
-      code: await bru.sendRequest('https://testbench-sanity.usebruno.com/ping')
     - type: tests
       code: |-
         test("Status code is 200", () => {
@@ -49,6 +47,14 @@ runtime:
 
         test("Response time < 2000ms", () => {
           expect(res.responseTime).to.be.below(2000);
+        });
+
+        test("Status code is 400", () => {
+          expect(res.status).to.equal(400);
+        });
+
+        test("Status code is 404", () => {
+          expect(res.status).to.equal(404);
         });
 
 settings:

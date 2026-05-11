@@ -1,0 +1,20 @@
+info:
+  name: AWSsigv4
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: http://localhost:9000/bucket/compose.yml
+  auth:
+    type: awsv4
+    accessKeyId: xYDVtxGaRihGK6X4fhfg
+    secretAccessKey: LyqOAMYp2WA63bWmo5M6CSsnijBCN5PpkTSD09nC
+    service: s3
+    region: us-east-1
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

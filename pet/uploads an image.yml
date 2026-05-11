@@ -32,7 +32,9 @@ runtime:
       value: one
   scripts:
     - type: before-request
-      code: bru.runner.skipRequest();
+      code: //bru.runner.skipRequest();
+    - type: after-response
+      code: await bru.sendRequest('https://testbench-sanity.usebruno.com/ping')
   assertions:
     - expression: res.body.code
       operator: eq

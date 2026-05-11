@@ -1,14 +1,14 @@
 info:
-  name: Add a new pet to the store
+  name: Add a new pet to the store (4)
   type: http
-  seq: 2
+  seq: 5
   tags:
     - pet
     - newpet
 
 http:
   method: POST
-  url: "{{baseUrl}}/pet{{process.env.ssAXsSCC}}"
+  url: "{{baseUrl}}/pet"
   headers:
     - name: accept
       value: application/json
@@ -39,8 +39,6 @@ http:
 
 runtime:
   scripts:
-    - type: after-response
-      code: await bru.sendRequest('https://testbench-sanity.usebruno.com/ping')
     - type: tests
       code: |-
         test("Status code is 200", () => {

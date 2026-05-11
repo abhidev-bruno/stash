@@ -1,0 +1,2864 @@
+[
+  {
+    "iterationIndex": 0,
+    "results": [
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store.yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:28 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1532,
+          "duration": 1532,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "wlys5ZBkQEt_j2Ef7KrLk"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "uBsZehxWbgMh4bEMKP7Oq"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.8348581,
+        "name": "Add a new pet to the store",
+        "path": "folderr\\Add a new pet to the store.yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (1).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:31 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1474,
+          "duration": 1474,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "pri-zXGBBLboUIJ_xjq8p"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "YxgabkEEp-3VWQUQU9rsV"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "KUOoFt8pW4MJM3Fc4OtRs"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "Tzzo6GKYIsyEmhGbjHaKL"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5826407,
+        "name": "Add a new pet to the store (1)",
+        "path": "folderr\\Add a new pet to the store (1).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (2).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.073176,
+        "name": "Add a new pet to the store (2)",
+        "path": "folderr\\Add a new pet to the store (2).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (3).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:35 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1502,
+          "duration": 1502,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "TdiqgZIeS3xW25wslSy76"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "D8CuhNyETVCQLkiHSqJo4"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "zj8V8eAmL1ikq42sZlXo7"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5730886,
+        "name": "Add a new pet to the store (3)",
+        "path": "folderr\\Add a new pet to the store (3).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (4).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:37 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1497,
+          "duration": 1497,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "8wlQRLCNIKHlNZ2TNpQSg"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "xcOWK5Iz49SXHy0zTug32"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5912257,
+        "name": "Add a new pet to the store (4)",
+        "path": "folderr\\Add a new pet to the store (4).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (5).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:40 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1391,
+          "duration": 1391,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "Au-i4C8llW5tVoq7-xT63"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "dAp8s9hrhX0tTX_Ce12U_"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "XZOT8CGNN_p-GpnE_lmMv"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "EBR7hHM2JOZlOEj8LkoVH"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.6921726,
+        "name": "Add a new pet to the store (5)",
+        "path": "folderr\\Add a new pet to the store (5).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (6).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.0890455,
+        "name": "Add a new pet to the store (6)",
+        "path": "folderr\\Add a new pet to the store (6).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (7).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:44 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1409,
+          "duration": 1409,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "z-iE5OctELQqrZKgQPtRF"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "tQspYMCLx16A-8ngbJeiA"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "GFeO5cpO6i9HrmWWnQ3jL"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.6554541,
+        "name": "Add a new pet to the store (7)",
+        "path": "folderr\\Add a new pet to the store (7).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (8).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:46 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1412,
+          "duration": 1412,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "ZMFClJDd6bAyf-SyEmg8N"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "5tFrHmzXeknXBAIYf__2F"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5562661,
+        "name": "Add a new pet to the store (8)",
+        "path": "folderr\\Add a new pet to the store (8).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (9).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:49 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1429,
+          "duration": 1429,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "CMooFBfzp-ugzPzjlX3KE"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "NH8vyhTDYiwD__zFw1jO9"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "Yf4LAPakWyEY-77b4bac2"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "G7Q50Sw4_j3yOjRa_-2Rt"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.6599079,
+        "name": "Add a new pet to the store (9)",
+        "path": "folderr\\Add a new pet to the store (9).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (10).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.145792,
+        "name": "Add a new pet to the store (10)",
+        "path": "folderr\\Add a new pet to the store (10).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (11).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:53 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1410,
+          "duration": 1410,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "5mzMwKgoZR2oVSFw1zMRg"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "Yo7Lvonj2f6NJqVewBkQA"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "82JXQhPGTNBF4M9CSRRbM"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5572027999999998,
+        "name": "Add a new pet to the store (11)",
+        "path": "folderr\\Add a new pet to the store (11).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (12).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:55 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1402,
+          "duration": 1402,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "YeMFsMMaY7xR22U5-V_9O"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "XELFMLElmuvDsdhfpS6Da"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5505304,
+        "name": "Add a new pet to the store (12)",
+        "path": "folderr\\Add a new pet to the store (12).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (13).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:58 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1418,
+          "duration": 1418,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "eu-mTtJQMc2zim_roR5sa"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "VWeNl_YQHEWfXWO4jtAVL"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "_5PLvDrpv-DDBy7vdDDA9"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "xSa3XRotgvNdqOEwpqzRp"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5834972,
+        "name": "Add a new pet to the store (13)",
+        "path": "folderr\\Add a new pet to the store (13).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (14).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.2234917,
+        "name": "Add a new pet to the store (14)",
+        "path": "folderr\\Add a new pet to the store (14).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (15).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:01 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1469,
+          "duration": 1469,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "KARTbrInGC8JFl9kwdgLo"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "oxveJMHJhIEbapgn3-wDr"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "2jwwrczLgsX0EjPw7DpR5"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5502624000000003,
+        "name": "Add a new pet to the store (15)",
+        "path": "folderr\\Add a new pet to the store (15).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (16).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:04 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1462,
+          "duration": 1462,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "V8c_ymuPsvFwSO4b0fuAl"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "KTPiy883dU3xYfkrFvSh4"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5459671,
+        "name": "Add a new pet to the store (16)",
+        "path": "folderr\\Add a new pet to the store (16).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (17).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:07 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1441,
+          "duration": 1441,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "hAXFYPaZTm2LJJ-k03eHy"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "JMHRF39A8HKWpb2tQxKDd"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "BEqYxHsQriEQg-_XFeX37"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "HDAlySo2sNUn-ieNxu-8x"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.6066035,
+        "name": "Add a new pet to the store (17)",
+        "path": "folderr\\Add a new pet to the store (17).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (18).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.0710194,
+        "name": "Add a new pet to the store (18)",
+        "path": "folderr\\Add a new pet to the store (18).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (19).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:10 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1472,
+          "duration": 1472,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "waD-5ZU6z7IRz2VSY4bRz"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "p9xlib-uW-2k1hJJqoCDc"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "dZ2YiVeLXrVOodRqCg_CU"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.563778,
+        "name": "Add a new pet to the store (19)",
+        "path": "folderr\\Add a new pet to the store (19).yml",
+        "iterationIndex": 0
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (20).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:13 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1436,
+          "duration": 1436,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "EP4P-wiU8Gfgg3oeX6Aep"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.5200784999999999,
+        "name": "Add a new pet to the store (20)",
+        "path": "folderr\\Add a new pet to the store (20).yml",
+        "iterationIndex": 0
+      }
+    ],
+    "summary": {
+      "totalRequests": 21,
+      "passedRequests": 6,
+      "failedRequests": 10,
+      "errorRequests": 0,
+      "skippedRequests": 5,
+      "totalAssertions": 0,
+      "passedAssertions": 0,
+      "failedAssertions": 0,
+      "totalTests": 46,
+      "passedTests": 31,
+      "failedTests": 15,
+      "totalPreRequestTests": 0,
+      "passedPreRequestTests": 0,
+      "failedPreRequestTests": 0,
+      "totalPostResponseTests": 0,
+      "passedPostResponseTests": 0,
+      "failedPostResponseTests": 0
+    }
+  },
+  {
+    "iterationIndex": 1,
+    "results": [
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store.yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:28 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1475,
+          "duration": 1475,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "v6kP-ss8qYa8e6wq_eqLt"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "EUnQULysJel6KWdL6xsOK"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.8202705,
+        "name": "Add a new pet to the store",
+        "path": "folderr\\Add a new pet to the store.yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (1).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:31 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1416,
+          "duration": 1416,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "elMksmaVXI76rSzma0dK2"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "__iBiCQujUmGSlXENuWUc"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "uMxAZuHWRc1Zoqq77-G9l"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "URdOcPn4f3loXGmOoo7za"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.515709,
+        "name": "Add a new pet to the store (1)",
+        "path": "folderr\\Add a new pet to the store (1).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (2).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.084173,
+        "name": "Add a new pet to the store (2)",
+        "path": "folderr\\Add a new pet to the store (2).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (3).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:35 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1414,
+          "duration": 1414,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "VCPyvuIcOT37l_Zjix20e"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "JQtQTGvTFGfEsCepY86TV"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "9GclBynQ7vLdcP8-ChASJ"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5857963,
+        "name": "Add a new pet to the store (3)",
+        "path": "folderr\\Add a new pet to the store (3).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (4).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:37 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1406,
+          "duration": 1406,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "H121EHAyMZOYbh7weTkSm"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "67vlF4vNdy71B7SsCB24R"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.577559,
+        "name": "Add a new pet to the store (4)",
+        "path": "folderr\\Add a new pet to the store (4).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (5).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:40 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1442,
+          "duration": 1442,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "49Q3n21yqodK_b_7C76S2"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "TkQDFAKy8yZzcga_51HF3"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "7TiQz68b13CkX53jYmVoD"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "4a1vWfhwHi9Z6c_ihkhXG"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5903377,
+        "name": "Add a new pet to the store (5)",
+        "path": "folderr\\Add a new pet to the store (5).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (6).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.1926341,
+        "name": "Add a new pet to the store (6)",
+        "path": "folderr\\Add a new pet to the store (6).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (7).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:44 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1462,
+          "duration": 1462,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "iY1BnkZZnxjoy8Tse59cD"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "-YunXRTKDSFc1GVXDO2sX"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "PXJRH5HAVO3MzZ0L9zJxX"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.7249206,
+        "name": "Add a new pet to the store (7)",
+        "path": "folderr\\Add a new pet to the store (7).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (8).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:46 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1416,
+          "duration": 1416,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "fuoYNbLRM4fPfG36AKJCy"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "cNBs-FSE1PMuCet86T_u2"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5567624,
+        "name": "Add a new pet to the store (8)",
+        "path": "folderr\\Add a new pet to the store (8).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (9).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:49 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1433,
+          "duration": 1433,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "D-_jcU19O97FdEDsHOFil"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "34B3DKOZSjm0f6F1qZBCZ"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "mkXlBtLKK0Y_TsIBmfInq"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "jwJaEqh3vj5l5hjrng3Oh"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.6602831,
+        "name": "Add a new pet to the store (9)",
+        "path": "folderr\\Add a new pet to the store (9).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (10).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.1294928,
+        "name": "Add a new pet to the store (10)",
+        "path": "folderr\\Add a new pet to the store (10).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (11).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:53 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1409,
+          "duration": 1409,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "lo01FNQ-Hcm-hcGppJCoR"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "UPx3R0TzRQ5gghFffZsiQ"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "r7rvgsU6b27Os5NPCKkB1"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5597585,
+        "name": "Add a new pet to the store (11)",
+        "path": "folderr\\Add a new pet to the store (11).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (12).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:55 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1417,
+          "duration": 1417,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "h44sNIkBlydZXRwtUaSaK"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "lxhNPUiXYmBBFDlkGPsLl"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5644761000000003,
+        "name": "Add a new pet to the store (12)",
+        "path": "folderr\\Add a new pet to the store (12).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (13).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:54:58 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1422,
+          "duration": 1422,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "miAjy3gDA1qIoOqYojS8x"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "0tMw4UPeHyY8nSJdSvtxX"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "PAbvgtGMGD2cXHP-IktQ3"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "URA3-0gPLB5GjfaQnlWpw"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5808085,
+        "name": "Add a new pet to the store (13)",
+        "path": "folderr\\Add a new pet to the store (13).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (14).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.2278917,
+        "name": "Add a new pet to the store (14)",
+        "path": "folderr\\Add a new pet to the store (14).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (15).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:01 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1386,
+          "duration": 1386,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "pfoFvNHSK0rvjUk8fIb-I"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "_LlMWkfsBSrfGkkkhydrR"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "hTE1gJfwsIQxFsZ57NQIN"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.4794971,
+        "name": "Add a new pet to the store (15)",
+        "path": "folderr\\Add a new pet to the store (15).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (16).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:04 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1408,
+          "duration": 1408,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "gTYQAA8vhh2eO8YrHCCX-"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "1BKXb2unooeW2BjYK8de3"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5471695,
+        "name": "Add a new pet to the store (16)",
+        "path": "folderr\\Add a new pet to the store (16).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (17).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:07 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1406,
+          "duration": 1406,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "IpD8zvTExL7B0TOPaxkNq"
+          },
+          {
+            "description": "Status code is 404",
+            "status": "fail",
+            "error": "expected 200 to equal 404",
+            "uid": "NSIavoPilPqeiiEhYwro2"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "dFSIT4Us3NI4qhwLwZuCR"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "loUfRB5SMizkMhBg4bWrf"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5415479,
+        "name": "Add a new pet to the store (17)",
+        "path": "folderr\\Add a new pet to the store (17).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (18).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "{{baseUrl}}/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"{{petName}}\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": "skipped",
+          "statusText": "request skipped via pre-request script",
+          "data": null,
+          "responseTime": 0,
+          "duration": 0,
+          "size": 0
+        },
+        "error": null,
+        "status": "skipped",
+        "skipped": true,
+        "assertionResults": [],
+        "testResults": [],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.1344025,
+        "name": "Add a new pet to the store (18)",
+        "path": "folderr\\Add a new pet to the store (18).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (19).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:10 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1422,
+          "duration": 1422,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 400",
+            "status": "fail",
+            "error": "expected 200 to equal 400",
+            "uid": "Ue6XdEz1nZ1pwa5m_ppxl"
+          },
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "JxGsUPGMBSvYVWU_kBU4W"
+          },
+          {
+            "description": "Response time < 2000ms",
+            "status": "pass",
+            "uid": "tuBTlbGYPeoGdaOMIcb1u"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 2.5637656,
+        "name": "Add a new pet to the store (19)",
+        "path": "folderr\\Add a new pet to the store (19).yml",
+        "iterationIndex": 1
+      },
+      {
+        "test": {
+          "filename": "folderr\\Add a new pet to the store (20).yml"
+        },
+        "request": {
+          "method": "POST",
+          "url": "https://petstore.swagger.io/v2/pet",
+          "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "data": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}"
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "date": "Thu, 07 May 2026 06:55:13 GMT",
+            "content-type": "application/json",
+            "transfer-encoding": "chunked",
+            "connection": "close",
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "GET, POST, DELETE, PUT",
+            "access-control-allow-headers": "Content-Type, api_key, Authorization",
+            "server": "Jetty(9.2.9.v20150224)"
+          },
+          "data": {
+            "id": 9223372036854775000,
+            "category": {
+              "id": 0,
+              "name": "string"
+            },
+            "name": "doggie",
+            "photoUrls": [
+              "string"
+            ],
+            "tags": [
+              {
+                "id": 0,
+                "name": "string"
+              }
+            ],
+            "status": "available"
+          },
+          "url": "https://petstore.swagger.io/v2/pet",
+          "responseTime": 1432,
+          "duration": 1432,
+          "size": 156
+        },
+        "error": null,
+        "status": "pass",
+        "assertionResults": [],
+        "testResults": [
+          {
+            "description": "Status code is 200",
+            "status": "pass",
+            "uid": "5oTiYdD37rArd7M6ZeggM"
+          }
+        ],
+        "preRequestTestResults": [],
+        "postResponseTestResults": [],
+        "shouldStopRunnerExecution": false,
+        "runDuration": 1.5176614000000002,
+        "name": "Add a new pet to the store (20)",
+        "path": "folderr\\Add a new pet to the store (20).yml",
+        "iterationIndex": 1
+      }
+    ],
+    "summary": {
+      "totalRequests": 21,
+      "passedRequests": 6,
+      "failedRequests": 10,
+      "errorRequests": 0,
+      "skippedRequests": 5,
+      "totalAssertions": 0,
+      "passedAssertions": 0,
+      "failedAssertions": 0,
+      "totalTests": 46,
+      "passedTests": 31,
+      "failedTests": 15,
+      "totalPreRequestTests": 0,
+      "passedPreRequestTests": 0,
+      "failedPreRequestTests": 0,
+      "totalPostResponseTests": 0,
+      "passedPostResponseTests": 0,
+      "failedPostResponseTests": 0
+    }
+  }
+]
